@@ -1,0 +1,113 @@
+{
+  "id": "asbestdaken",
+  "type": "dataset",
+  "title": "Asbestdaken",
+  "version": "0.0.1",
+  "crs": "EPSG:28992",
+  "classes": [
+    {
+      "id": "daken",
+      "type": "class",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "$id": "https://ams-schema.glitch.me/dataset/asbestdaken/daken",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "dataset",
+          "class"
+        ],
+        "properties": {
+          "class": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/class"
+          },
+          "dataset": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/dataset"
+          },
+          "bouwjaar": {
+            "type": "number",
+            "description": ""
+          },
+          "gebruiksdoel": {
+            "type": "string",
+            "description": ""
+          },
+          "status": {
+            "type": "string",
+            "description": ""
+          },
+          "woonplaats": {
+            "type": "string",
+            "description": ""
+          },
+          "perceelnummer": {
+            "type": "number",
+            "description": ""
+          },
+          "bestemming": {
+            "type": "string",
+            "description": ""
+          },
+          "asbestVerdacht": {
+            "type": "boolean",
+            "description": ""
+          },
+          "kwaliteit": {
+            "type": "string",
+            "description": ""
+          },
+          "oppervlakte": {
+            "type": "number",
+            "description": ""
+          },
+          "kadaster": {
+            "type": "string",
+            "description": ""
+          },
+          "id": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/id",
+            "description": ""
+          },
+          "geometry": {
+            "$ref": "https://geojson.org/schema/Geometry.json"
+          }
+        }
+      }
+    },
+    {
+      "id": "percelen",
+      "type": "class",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "$id": "https://ams-schema.glitch.me/dataset/asbestdaken/percelen",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "dataset",
+          "class"
+        ],
+        "properties": {
+          "class": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/class"
+          },
+          "dataset": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/dataset"
+          },
+          "perceelnummer": {
+            "type": "string",
+            "description": ""
+          },
+          "id": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/id",
+            "description": "Identificatie"
+          },
+          "geometry": {
+            "$ref": "https://geojson.org/schema/Geometry.json"
+          }
+        }
+      }
+    }
+  ]
+}
