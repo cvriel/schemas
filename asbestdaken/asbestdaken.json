@@ -4,23 +4,26 @@
   "title": "Asbestdaken",
   "version": "0.0.1",
   "crs": "EPSG:28992",
-  "classes": [
+  "tables": [
     {
       "id": "daken",
-      "type": "class",
+      "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "https://ams-schema.glitch.me/dataset/asbestdaken/daken",
         "type": "object",
         "additionalProperties": false,
         "required": [
           "id",
           "dataset",
-          "class"
+          "table"
         ],
         "properties": {
-          "class": {
-            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/class"
+          "id": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/id",
+            "description": ""
+          },
+          "table": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/table"
           },
           "dataset": {
             "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/dataset"
@@ -65,10 +68,6 @@
             "type": "string",
             "description": ""
           },
-          "id": {
-            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/id",
-            "description": ""
-          },
           "geometry": {
             "$ref": "https://geojson.org/schema/Geometry.json"
           }
@@ -77,20 +76,23 @@
     },
     {
       "id": "percelen",
-      "type": "class",
+      "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "https://ams-schema.glitch.me/dataset/asbestdaken/percelen",
         "type": "object",
         "additionalProperties": false,
         "required": [
           "id",
           "dataset",
-          "class"
+          "table"
         ],
         "properties": {
-          "class": {
-            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/class"
+          "id": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/id",
+            "description": "Identificatie"
+          },
+          "table": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/table"
           },
           "dataset": {
             "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/dataset"
@@ -98,10 +100,6 @@
           "perceelnummer": {
             "type": "string",
             "description": ""
-          },
-          "id": {
-            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/id",
-            "description": "Identificatie"
           },
           "geometry": {
             "$ref": "https://geojson.org/schema/Geometry.json"
