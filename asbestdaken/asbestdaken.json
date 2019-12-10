@@ -23,7 +23,7 @@
             "description": ""
           },
           "table": {
-            "$ref": "https://static.amsterdam.nl/schemas/schema@#/definitions/table"
+            "$ref": "https://static.amsterdam.nl/schemas/schema#/definitions/table"
           },
           "dataset": {
             "$ref": "https://static.amsterdam.nl/schemas/schema#/definitions/dataset"
