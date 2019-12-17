@@ -19,13 +19,13 @@
         ],
         "properties": {
           "class": {
-            "$ref": "https://static.amsterdam.nl/schemas/schema@v1.0#/definitions/class"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.0#/definitions/class"
           },
           "dataset": {
-            "$ref": "https://static.amsterdam.nl/schemas/schema@v1.0#/definitions/dataset"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.0#/definitions/dataset"
           },
           "id": {
-            "$ref": "https://static.amsterdam.nl/schemas/schema@v1.0#/definitions/id",
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.0#/definitions/id",
             "description": "uniek"
           },
           "Kenmerk": {

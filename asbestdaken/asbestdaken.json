@@ -19,14 +19,14 @@
         ],
         "properties": {
           "id": {
-            "$ref": "https://static.amsterdam.nl/schemas/schema#/definitions/id",
+            "$ref": "https://schemas.data.amsterdam.nl/schema#/definitions/id",
             "description": ""
           },
           "table": {
-            "$ref": "https://static.amsterdam.nl/schemas/schema#/definitions/table"
+            "$ref": "https://schemas.data.amsterdam.nl/schema#/definitions/table"
           },
           "dataset": {
-            "$ref": "https://static.amsterdam.nl/schemas/schema#/definitions/dataset"
+            "$ref": "https://schemas.data.amsterdam.nl/schema#/definitions/dataset"
           },
           "bouwjaar": {
             "type": "number",
@@ -88,14 +88,14 @@
         ],
         "properties": {
           "id": {
-            "$ref": "https://static.amsterdam.nl/schemas/schema#/definitions/id",
+            "$ref": "https://schemas.data.amsterdam.nl/schema#/definitions/id",
             "description": "Identificatie"
           },
           "table": {
-            "$ref": "https://static.amsterdam.nl/schemas/schema#/definitions/table"
+            "$ref": "https://schemas.data.amsterdam.nl/schema#/definitions/table"
           },
           "dataset": {
-            "$ref": "https://static.amsterdam.nl/schemas/schema#/definitions/dataset"
+            "$ref": "https://schemas.data.amsterdam.nl/schema#/definitions/dataset"
           },
           "perceelnummer": {
             "type": "string",
