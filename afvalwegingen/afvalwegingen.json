@@ -1,0 +1,217 @@
+{
+  "id": "afvalwegingen",
+  "type": "dataset",
+  "title": "Afvalwegingen",
+  "version": "0.0.1",
+  "crs": "EPSG:28992",
+  "tables": [
+    {
+      "id": "containers",
+      "type": "table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "dataset",
+          "table"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Container-ID"
+          },
+          "cluster_id": {
+            "type": "string",
+            "$comment": "Moeten we hiervoor niet https://resource.data.amsterdam.nl gebruiken? (URL/domein bestaat nog niet, maar willen we misschien wel, toch Michiel?)",
+            "relation": "https://schemas.data.amsterdam.nl/datasets/afvalwegingen/clusters"
+          },
+          "serienummer": {
+            "type": "string",
+            "description": "Serienummer van container"
+          },
+          "eigenaar_id": {
+            "type": "string"
+          },
+          "eigenaar_naam": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "afvalfractie": {
+            "type": "string"
+          },
+          "datum_creatie": {
+            "type": "string",
+            "format": "date"
+          },
+          "datum_plaatsing": {
+            "type": "string",
+            "format": "date"
+          },
+          "datum_operationeel": {
+            "type": "string",
+            "format": "date"
+          },
+          "datum_aflopen_garantie": {
+            "type": "string",
+            "format": "date"
+          },
+          "datum_oplevering": {
+            "type": "string",
+            "format": "date"
+          },
+          "containerlocatie_id": {
+            "type": "string"
+          },
+          "geometrie": {
+            "$ref": "https://geojson.org/schema/Point.json"
+          },
+          "containertype_id": {
+            "type": "string",
+            "relation": "https://schemas.data.amsterdam.nl/datasets/afvalwegingen/containertypes"
+          }
+        }
+      }
+    },
+    {
+      "id": "clusters",
+      "type": "table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "dataset",
+          "table"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "subcluster_indicatie": {
+            "type": "boolean"
+          },
+          "geometry": {
+            "$ref": "https://geojson.org/schema/Point.json"
+          },
+          "datum_opvoer_cluster": {
+            "type": "string",
+            "format": "datetime"
+          },
+          "datum_wijziging": {
+            "type": "string",
+            "format": "datetime"
+          },
+          "datum_ontstaan_cluster": {
+            "type": "string",
+            "format": "date"
+          },
+          "datum_einde_cluster": {
+            "type": "string",
+            "format": "date"
+          },
+          "status": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    {
+      "id": "wegingen",
+      "type": "table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "dataset",
+          "table"
+        ],
+        "properties": {          
+          "id": {
+            "type": "string",
+            "description": "Weging-ID"
+          },
+          "cluster_id": {
+            "type": "string",
+            "relation": "https://schemas.data.amsterdam.nl/datasets/afvalwegingen/clusters"
+          },
+          "weegsysteem_id": {
+            "type": "integer"
+          },
+          "weegsysteem_omschrijving": {
+            "type": "string"
+          },
+          "volgnummer": {
+            "type": "integer"
+          },
+          "tijdstip": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "welvaarts_locatienummer": {
+            "type": "string"
+          },
+          "fractiecode": {
+            "type": "integer"
+          },
+          "fractie_omschrijving": {
+            "type": "string"
+          },
+          "eerste_weging": {
+            "type": "number"
+          },
+          "tweede_weging": {
+            "type": "number"
+          },
+          "netto_gewicht": {
+            "type": "number"
+          },
+          "geometrie": {
+            "$ref": "https://geojson.org/schema/Point.json"
+          },
+          "bediening_code": {
+            "type": "integer"
+          },
+          "bediening_omschrijving": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "id": "containertypes",
+      "type": "table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "dataset",
+          "table"
+        ],
+        "properties": {
+          "naam": {
+            "type": "string"
+          },
+          "volume": {
+            "type": "number",
+            "description": "",
+            "unit": "m3"
+          },
+          "gewicht": {
+            "type": "integer",
+            "description": "",
+            "unit": "kg"
+          }
+        }
+      }
+    }
+  ]
+}
