@@ -14,64 +14,79 @@
         "additionalProperties": false,
         "required": [
           "id",
-          "dataset",
-          "table"
+          "schema"
         ],
         "properties": {
           "id": {
-            "type": "string",
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",
             "description": "Container-ID"
           },
-          "cluster_id": {
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "clusterId": {
             "type": "string",
             "$comment": "Moeten we hiervoor niet https://resource.data.amsterdam.nl gebruiken? (URL/domein bestaat nog niet, maar willen we misschien wel, toch Michiel?)",
-            "relation": "https://schemas.data.amsterdam.nl/datasets/afvalwegingen/clusters"
+            "relation": "https://schemas.data.amsterdam.nl/datasets/afvalwegingen/clusters",
+            "description": "Cluster-ID"
           },
           "serienummer": {
             "type": "string",
             "description": "Serienummer van container"
           },
-          "eigenaar_id": {
-            "type": "string"
+          "eigenaarId": {
+            "type": "string",
+            "description": "Eigenaar-ID"
           },
-          "eigenaar_naam": {
-            "type": "string"
+          "eigenaarNaam": {
+            "type": "string",
+            "description": "Naam van eigenaar"
           },
           "status": {
-            "type": "string"
+            "type": "string",
+            "description": "Status"
           },
           "afvalfractie": {
-            "type": "string"
-          },
-          "datum_creatie": {
             "type": "string",
-            "format": "date"
+            "description": "Afvalfractie"
           },
-          "datum_plaatsing": {
+          "datumCreatie": {
             "type": "string",
-            "format": "date"
+            "format": "date",
+            "description": "Datum aangemaakt"
           },
-          "datum_operationeel": {
+          "datumPlaatsing": {
             "type": "string",
-            "format": "date"
+            "format": "date",
+            "description": "Datum plaatsing"
           },
-          "datum_aflopen_garantie": {
+          "datumOperationeel": {
             "type": "string",
-            "format": "date"
+            "format": "date",
+            "description": "Datum operationeel"
           },
-          "datum_oplevering": {
+          "datumAflopenGarantie": {
             "type": "string",
-            "format": "date"
+            "format": "date",
+            "description": "Datum aflopen garantie"
           },
-          "containerlocatie_id": {
-            "type": "string"
-          },
-          "geometrie": {
-            "$ref": "https://geojson.org/schema/Point.json"
-          },
-          "containertype_id": {
+          "datumOplevering": {
             "type": "string",
-            "relation": "https://schemas.data.amsterdam.nl/datasets/afvalwegingen/containertypes"
+            "format": "date",
+            "description": "Datum oplevering"
+          },
+          "containerlocatieId": {
+            "type": "string",
+            "description": "Locatie-ID van container"
+          },
+          "geometry": {
+            "$ref": "https://geojson.org/schema/Point.json",
+            "description": "Geometrie"
+          },
+          "containertypeId": {
+            "type": "string",
+            "relation": "https://schemas.data.amsterdam.nl/datasets/afvalwegingen/containertypes",
+            "description": "Containertype-ID"
           }
         }
       }
@@ -85,37 +100,46 @@
         "additionalProperties": false,
         "required": [
           "id",
-          "dataset",
-          "table"
+          "schema"
         ],
         "properties": {
           "id": {
-            "type": "string"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
           },
-          "subcluster_indicatie": {
-            "type": "boolean"
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "subclusterIndicatie": {
+            "type": "boolean",
+            "description": "Subcluster"
           },
           "geometry": {
-            "$ref": "https://geojson.org/schema/Point.json"
+            "$ref": "https://geojson.org/schema/Point.json",
+            "description": "Geometrie"
           },
-          "datum_opvoer_cluster": {
+          "datumOpvoerCluster": {
             "type": "string",
-            "format": "datetime"
+            "format": "date-time",
+            "description": "Datum opvoer cluster"
           },
-          "datum_wijziging": {
+          "datumWijziging": {
             "type": "string",
-            "format": "datetime"
+            "format": "date-time",
+            "description": "Datum wijziging"
           },
-          "datum_ontstaan_cluster": {
+          "datumOntstaanCluster": {
             "type": "string",
-            "format": "date"
+            "format": "date",
+            "description": "Datum onstaan cluster"
           },
-          "datum_einde_cluster": {
+          "datumEindeCluster": {
             "type": "string",
-            "format": "date"
+            "format": "date",
+            "description": "Datum einde cluster"
           },
           "status": {
-            "type": "integer"
+            "type": "string",
+            "description": "Status"
           }
         }
       }
@@ -129,57 +153,74 @@
         "additionalProperties": false,
         "required": [
           "id",
-          "dataset",
-          "table"
+          "schema"
         ],
-        "properties": {          
+        "properties": {
           "id": {
-            "type": "string",
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",
             "description": "Weging-ID"
           },
-          "cluster_id": {
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "clusterId": {
             "type": "string",
-            "relation": "https://schemas.data.amsterdam.nl/datasets/afvalwegingen/clusters"
+            "relation": "https://schemas.data.amsterdam.nl/datasets/afvalwegingen/clusters",
+            "description": "Cluster-ID"
           },
-          "weegsysteem_id": {
-            "type": "integer"
+          "weegsysteemId": {
+            "type": "string",
+            "description": "Weegsysteem-ID"
           },
-          "weegsysteem_omschrijving": {
-            "type": "string"
+          "weegsysteemOmschrijving": {
+            "type": "string",
+            "description": "Omschrijving van weegsysteem"
           },
           "volgnummer": {
-            "type": "integer"
+            "type": "string",
+            "description": "Volgnummer"
           },
           "tijdstip": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "description": "Tijdstip"
           },
-          "welvaarts_locatienummer": {
-            "type": "string"
+          "welvaartslocatienummer": {
+            "type": "string",
+            "description": "Welvaartslocatienummer"
           },
           "fractiecode": {
-            "type": "integer"
+            "type": "string",
+            "description": "Fractiecode"
           },
-          "fractie_omschrijving": {
-            "type": "string"
+          "fractieOmschrijving": {
+            "type": "string",
+            "description": "Omschrijving fractie"
           },
-          "eerste_weging": {
-            "type": "number"
+          "eersteWeging": {
+            "type": "number",
+            "description": "Eerste weging"
           },
-          "tweede_weging": {
-            "type": "number"
+          "tweedeWeging": {
+            "type": "number",
+            "description": "Tweede weging"
           },
-          "netto_gewicht": {
-            "type": "number"
+          "nettoGewicht": {
+            "type": "number",
+            "unit": "kg",
+            "description": "Netto gewicht"
           },
-          "geometrie": {
-            "$ref": "https://geojson.org/schema/Point.json"
+          "geometry": {
+            "$ref": "https://geojson.org/schema/Point.json",
+            "description": "Geometrie"
           },
-          "bediening_code": {
-            "type": "integer"
+          "bedieningCode": {
+            "type": "string",
+            "description": "Code bediening"
           },
-          "bediening_omschrijving": {
-            "type": "string"
+          "bedieningOmschrijving": {
+            "type": "string",
+            "description": "Omschrijving bediening"
           }
         }
       }
@@ -193,22 +234,28 @@
         "additionalProperties": false,
         "required": [
           "id",
-          "dataset",
-          "table"
+          "schema"
         ],
         "properties": {
           "naam": {
-            "type": "string"
+            "type": "string",
+            "description": "Naam"
           },
           "volume": {
             "type": "number",
-            "description": "",
+            "description": "Volume",
             "unit": "m3"
           },
           "gewicht": {
-            "type": "integer",
-            "description": "",
+            "type": "string",
+            "description": "Gewicht",
             "unit": "kg"
+          },
+          "id": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
+          },
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
           }
         }
       }
