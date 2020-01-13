@@ -14,62 +14,60 @@
         "additionalProperties": false,
         "required": [
           "id",
-          "dataset",
-          "table"
+          "schema"
         ],
         "properties": {
           "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.0#/definitions/id",
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",
             "description": ""
           },
-          "table": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.0#/definitions/table"
-          },
-          "dataset": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.0#/definitions/dataset"
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
           },
           "bouwjaar": {
             "type": "number",
-            "description": ""
+            "description": "Bouwjaar"
           },
           "gebruiksdoel": {
             "type": "string",
-            "description": ""
+            "description": "Gebruiksdoel"
           },
           "status": {
             "type": "string",
-            "description": ""
+            "description": "Status"
           },
           "woonplaats": {
             "type": "string",
-            "description": ""
+            "description": "Woonplaats"
           },
           "perceelnummer": {
             "type": "number",
-            "description": ""
+            "description": "Perceelnummer"
           },
           "bestemming": {
             "type": "string",
-            "description": ""
+            "description": "Bestemming"
           },
           "asbestVerdacht": {
             "type": "boolean",
-            "description": ""
+            "description": "Asbest Verdacht"
           },
           "kwaliteit": {
             "type": "string",
-            "description": ""
+            "description": "Kwaliteit"
           },
           "oppervlakte": {
             "type": "number",
-            "description": ""
+            "description": "Oppervlakte",
+            "unit": "m2"
           },
           "kadaster": {
             "type": "string",
-            "description": ""
+            "description": "Kadaster"
           },
           "geometry": {
-            "$ref": "https://geojson.org/schema/Geometry.json"
+            "$ref": "https://geojson.org/schema/Geometry.json",
+            "description": "Geometrie"
           }
         }
       }
@@ -83,26 +81,23 @@
         "additionalProperties": false,
         "required": [
           "id",
-          "dataset",
-          "table"
+          "schema"
         ],
         "properties": {
           "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.0#/definitions/id",
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",
             "description": "Identificatie"
           },
-          "table": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.0#/definitions/table"
-          },
-          "dataset": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.0#/definitions/dataset"
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
           },
           "perceelnummer": {
             "type": "string",
-            "description": ""
+            "description": "Perceelnummer"
           },
           "geometry": {
-            "$ref": "https://geojson.org/schema/Geometry.json"
+            "$ref": "https://geojson.org/schema/Geometry.json",
+            "description": "Geometrie"
           }
         }
       }

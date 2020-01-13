@@ -14,62 +14,44 @@
         "additionalProperties": false,
         "required": [
           "id",
-          "dataset",
-          "type"
+          "schema"
         ],
         "properties": {
-          "type": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.0#/definitions/class"
-          },
-          "dataset": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.0#/definitions/dataset"
-          },
           "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.0#/definitions/id",
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",
             "description": "uniek"
           },
-          "Kenmerk": {
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "kenmerk": {
             "type": "string",
-            "description": ""
+            "description": "Kenmerk"
           },
-          "Datum": {
+          "datum": {
             "type": "string",
-            "description": ""
+            "description": "Datum",
+            "format": "date-time"
           },
-          "Soort_hand": {
+          "bron": {
             "type": "string",
-            "description": ""
+            "description": "Bron"
           },
-          "Bron1": {
+          "intekening": {
             "type": "string",
-            "description": ""
+            "description": "Intekening"
           },
-          "Datum1": {
+          "nauwkeurig": {
             "type": "string",
-            "description": ""
+            "description": "Nauwkeurig"
           },
-          "Intekening": {
+          "opmerkingen": {
             "type": "string",
-            "description": ""
-          },
-          "Nauwkeurig": {
-            "type": "string",
-            "description": ""
-          },
-          "Opmerkinge": {
-            "type": "string",
-            "description": ""
-          },
-          "SHAPE_Leng": {
-            "type": "number",
-            "description": ""
-          },
-          "SHAPE_Area": {
-            "type": "number",
-            "description": ""
+            "description": "Opmerkingen"
           },
           "geometry": {
-            "$ref": "https://geojson.org/schema/Geometry.json"
+            "$ref": "https://geojson.org/schema/Geometry.json",
+            "description": "Geometrie"
           }
         }
       }
