@@ -109,10 +109,10 @@
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
           },
-          "bagVerblijfsObjectId": {
+          "bagVerblijfsobjectId": {
             "type": "string",
-            "$comment": "Wat is dan de URI van de table bag:verblijfsobject? Ik (Bert) stem voor https://resource.data.amsterdam.nl/datasets/bag/verblijfssobject!!!!!",
-            "relation": "https://schemas.data.amsterdam.nl/datasets/bag/verblijfssobject",
+            "$comment": "Wat is dan de URI van de table bag:verblijfsobject? Ik (Bert) stem voor https://resource.data.amsterdam.nl/bag/verblijfssobject!!!!!",
+            "relation": "amsterdam:bag:verblijfsobject",
             "description": "Verblijfsobject-ID"
           },
           "subclusterIndicatie": {
