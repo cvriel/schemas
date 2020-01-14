@@ -27,7 +27,7 @@
           "clusterId": {
             "type": "string",
             "$comment": "Moeten we hiervoor niet https://resource.data.amsterdam.nl gebruiken? (URL/domein bestaat nog niet, maar willen we misschien wel, toch Michiel?)",
-            "relation": "https://schemas.data.amsterdam.nl/datasets/afvalwegingen/clusters",
+            "relation": "afvalwegingen:clusters",
             "description": "Cluster-ID"
           },
           "serienummer": {
@@ -85,7 +85,7 @@
           },
           "containertypeId": {
             "type": "string",
-            "relation": "https://schemas.data.amsterdam.nl/datasets/afvalwegingen/containertypes",
+            "relation": "afvalwegingen:containertypes",
             "description": "Containertype-ID"
           }
         }
@@ -112,7 +112,7 @@
           "bagVerblijfsobjectId": {
             "type": "string",
             "$comment": "Wat is dan de URI van de table bag:verblijfsobject? Ik (Bert) stem voor https://resource.data.amsterdam.nl/bag/verblijfssobject!!!!!",
-            "relation": "amsterdam:bag:verblijfsobject",
+            "relation": "bag:verblijfsobject",
             "description": "Verblijfsobject-ID"
           },
           "subclusterIndicatie": {
@@ -171,7 +171,7 @@
           },
           "clusterId": {
             "type": "string",
-            "relation": "https://schemas.data.amsterdam.nl/datasets/afvalwegingen/clusters",
+            "relation": "afvalwegingen:clusters",
             "description": "Cluster-ID"
           },
           "weegsysteemId": {
