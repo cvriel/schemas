@@ -21,9 +21,8 @@
                     "schema": {
                         "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
                     },
-                    "cluster id": {
+                    "cluster": {
                         "type": "string",
-                        "$comment": "Moeten we hiervoor niet https://resource.data.amsterdam.nl gebruiken? (URL/domein bestaat nog niet, maar willen we misschien wel, toch Michiel?)",
                         "relation": "afvalwegingen:clusters",
                         "description": "Cluster-ID"
                     },
@@ -80,7 +79,7 @@
                         "$ref": "https://geojson.org/schema/Point.json",
                         "description": "Geometrie"
                     },
-                    "containertype id": {
+                    "containertype": {
                         "type": "string",
                         "relation": "afvalwegingen:containertypes",
                         "description": "Containertype-ID"
@@ -103,7 +102,7 @@
                     "schema": {
                         "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
                     },
-                    "bag nummeraanduiding id": {
+                    "bag nummeraanduiding": {
                         "type": "string",
                         "$comment": "verblijfsobject is dekt niet de ligplaatsen en de standplaatsen (zie stelselpedia)",
                         "relation": "bag:nummeraanduiding"
@@ -159,7 +158,7 @@
                     "schema": {
                         "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
                     },
-                    "cluster id": {
+                    "cluster": {
                         "type": "string",
                         "relation": "afvalwegingen:clusters",
                         "description": "Cluster-ID"
