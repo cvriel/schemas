@@ -1,8 +1,21 @@
 {
     "id": "afvalwegingen",
     "type": "dataset",
-    "title": "Afvalwegingen",
-    "version": "0.0.1",
+    "authorizationGrantor": "Deze gegevensset wordt onderhouden voor uitvoering van taken betreffende het inzamelen van huishoudelijk afval. De juridische basis is de Wet Milieubeheer, Hoofdstuk 10. Afvalstoffen.",
+    "theme": ["Wonen", "duurzaamheid en milieu", "Ruimte en Topografie"],
+    "homepage": "https://data.amsterdam.nl",
+    "owner": "Gemeente Amsterdam, Stadswerken",
+    "dateModified": "13 januari 2020",
+    "spatialDescription": "Gemeente Amsterdam",
+    "version": "2",
+    "title": "Onder- en bovengrondse Afvalcontainers en putten",
+    "language": "Nederlands",
+    "dateCreated": "13 januari 2020",
+    "license": "Creative Commons, Naamsvermelding",
+    "hasBeginning": "2016",
+    "accrualPeriodicity": "dagelijks",
+    "publisher": "OIS",
+    "description": "Alle locaties van de actieve onder- en bovengronds afvalcontainers en betonputten van de Gemeente Amsterdam. De locaties worden dagelijks bijgewerkt en bevatten de fracties Rest, Papier, Glas, Textiel en Plastic. Naast de objectinformatie zijn ook de weeggegevens beschikbaar.",
     "crs": "EPSG:28992",
     "tables": [
         {
@@ -254,4 +267,3 @@
         }
     ]
 }
-
