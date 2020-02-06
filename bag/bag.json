@@ -1,12 +1,12 @@
 {
   "type": "dataset",
-  "id": "bag_grootstedelijkgebied",
-  "title": "bag_grootstedelijkgebied",
+  "id": "bag",
+  "title": "bag",
   "version": "0.0.1",
   "crs": "EPSG:28992",
   "tables": [
     {
-      "id": "openbareruimte",
+      "id": "bag_openbareruimte",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -83,7 +83,7 @@
       }
     },
     {
-      "id": "bouwblok",
+      "id": "bag_bouwblok",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -132,7 +132,7 @@
       }
     },
     {
-      "id": "buurt",
+      "id": "bag_buurt",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -208,7 +208,7 @@
       }
     },
     {
-      "id": "buurtcombinatie",
+      "id": "bag_buurtcombinatie",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -272,7 +272,7 @@
       }
     },
     {
-      "id": "gebiedsgerichtwerken",
+      "id": "bag_gebiedsgerichtwerken",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -314,7 +314,7 @@
       }
     },
     {
-      "id": "gemeente",
+      "id": "bag_gemeente",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -362,7 +362,7 @@
       }
     },
     {
-      "id": "stadsdeel",
+      "id": "bag_stadsdeel",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -426,7 +426,7 @@
       }
     },
     {
-      "id": "standplaats",
+      "id": "bag_standplaats",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -494,7 +494,7 @@
       }
     },
     {
-      "id": "verblijfsobject",
+      "id": "bag_verblijfsobject",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -611,7 +611,7 @@
       }
     },
     {
-      "id": "woonplaats",
+      "id": "bag_woonplaats",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -668,7 +668,7 @@
       }
     },
     {
-      "id": "pand",
+      "id": "bag_pand",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -747,7 +747,7 @@
       }
     },
     {
-      "id": "verblijfsobjectpandrelatie",
+      "id": "bag_verblijfsobjectpandrelatie",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -783,7 +783,7 @@
       }
     },
     {
-      "id": "bron",
+      "id": "bag_bron",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -816,7 +816,7 @@
       }
     },
     {
-      "id": "gebiedsgerichtwerkenpraktijkgebieden",
+      "id": "bag_gebiedsgerichtwerkenpraktijkgebieden",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -849,7 +849,7 @@
       }
     },
     {
-      "id": "indicatieadresseerbaarobject",
+      "id": "bag_indicatieadresseerbaarobject",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -882,7 +882,7 @@
       }
     },
     {
-      "id": "ligplaats",
+      "id": "bag_ligplaats",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -950,7 +950,7 @@
       }
     },
     {
-      "id": "nummeraanduiding",
+      "id": "bag_nummeraanduiding",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -1041,7 +1041,7 @@
       }
     },
     {
-      "id": "unesco",
+      "id": "bag_unesco",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
