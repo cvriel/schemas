@@ -59,7 +59,7 @@
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
           },
-          "landelijk": {
+          "landelijk id": {
             "type": "string"
           },
           "indicatie geconstateerd": {
@@ -409,7 +409,7 @@
             "type": "string",
             "format": "date"
           },
-          "landelijk": {
+          "landelijk id": {
             "type": "string"
           },
           "date modified": {
@@ -483,7 +483,7 @@
             "type": "string",
             "format": "date"
           },
-          "landelijk": {
+          "landelijk id": {
             "type": "string"
           },
           "vervallen": {
@@ -555,7 +555,7 @@
             "type": "string",
             "format": "date"
           },
-          "landelijk": {
+          "landelijk id": {
             "type": "string"
           },
           "oppervlakte": {
@@ -672,7 +672,7 @@
             "type": "string",
             "format": "date-time"
           },
-          "landelijk": {
+          "landelijk id": {
             "type": "string"
           },
           "vervallen": {
@@ -806,7 +806,7 @@
             "type": "string",
             "format": "date-time"
           },
-          "landelijk": {
+          "landelijk id": {
             "type": "string"
           },
           "naam": {
@@ -905,7 +905,7 @@
             "type": "string",
             "format": "date"
           },
-          "landelijk": {
+          "landelijk id": {
             "type": "string"
           },
           "bouwjaar": {
@@ -986,7 +986,7 @@
             "type": "string",
             "format": "date"
           },
-          "landelijk": {
+          "landelijk id": {
             "type": "string"
           },
           "huisnummer": {
