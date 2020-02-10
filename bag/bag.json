@@ -6,91 +6,19 @@
   "crs": "EPSG:28992",
   "tables": [
     {
-      "id": "bron",
+      "id": "bouwblok",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
         "additionalProperties": false,
         "required": [
-          "id",
-          "schema",
-          "code",
-          "date modified"
-        ],
-        "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
-          "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
-          },
-          "code": {
-            "type": "string"
-          },
-          "omschrijving": {
-            "type": "string"
-          },
-          "date modified": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      }
-    },
-    {
-      "id": "indicatieadresseerbaarobject",
-      "type": "table",
-      "schema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "id",
-          "schema",
-          "landelijk",
-          "indicatie geconstateerd",
-          "indicatie in onderzoek"
-        ],
-        "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
-          "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
-          },
-          "landelijk id": {
-            "type": "string"
-          },
-          "indicatie geconstateerd": {
-            "type": "integer"
-          },
-          "indicatie in onderzoek": {
-            "type": "integer"
-          }
-        }
-      }
-    },
-    {
-      "id": "buurt",
-      "type": "table",
-      "schema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "id",
           "schema",
           "date modified",
-          "code",
-          "vollcode",
-          "naam",
-          "stadsdeel"
+          "id",
+          "code"
         ],
         "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
           },
@@ -108,6 +36,90 @@
           "date modified": {
             "type": "string",
             "format": "date-time"
+          },
+          "id": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "ingang cyclus": {
+            "type": "string",
+            "format": "date"
+          },
+          "buurt": {
+            "type": "string",
+            "relation": "bag:buurt"
+          }
+        }
+      }
+    },
+    {
+      "id": "bron",
+      "type": "table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schema",
+          "code",
+          "date modified"
+        ],
+        "properties": {
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "code": {
+            "type": "string"
+          },
+          "omschrijving": {
+            "type": "string"
+          },
+          "date modified": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    {
+      "id": "buurt",
+      "type": "table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schema",
+          "date modified",
+          "id",
+          "code",
+          "vollcode",
+          "naam",
+          "stadsdeel"
+        ],
+        "properties": {
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "begin geldigheid": {
+            "type": "string",
+            "format": "date"
+          },
+          "einde geldigheid": {
+            "type": "string",
+            "format": "date"
+          },
+          "geometrie": {
+            "$ref": "https://geojson.org/schema/Geometry.json"
+          },
+          "date modified": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "id": {
+            "type": "string"
           },
           "code": {
             "type": "string"
@@ -148,55 +160,6 @@
       }
     },
     {
-      "id": "bouwblok",
-      "type": "table",
-      "schema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "id",
-          "schema",
-          "date modified",
-          "code"
-        ],
-        "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
-          "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
-          },
-          "begin geldigheid": {
-            "type": "string",
-            "format": "date"
-          },
-          "einde geldigheid": {
-            "type": "string",
-            "format": "date"
-          },
-          "geometrie": {
-            "$ref": "https://geojson.org/schema/Geometry.json"
-          },
-          "date modified": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "code": {
-            "type": "string"
-          },
-          "ingang cyclus": {
-            "type": "string",
-            "format": "date"
-          },
-          "buurt": {
-            "type": "string",
-            "relation": "bag:buurt"
-          }
-        }
-      }
-    },
-    {
       "id": "buurtcombinatie",
       "type": "table",
       "schema": {
@@ -204,17 +167,14 @@
         "type": "object",
         "additionalProperties": false,
         "required": [
-          "id",
           "schema",
+          "id",
           "naam",
           "code",
           "vollcode",
           "date modified"
         ],
         "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
           },
@@ -225,6 +185,9 @@
           "einde geldigheid": {
             "type": "string",
             "format": "date"
+          },
+          "id": {
+            "type": "string"
           },
           "naam": {
             "type": "string"
@@ -268,19 +231,19 @@
         "type": "object",
         "additionalProperties": false,
         "required": [
-          "id",
           "schema",
+          "id",
           "code",
           "naam",
           "date modified",
           "stadsdeel"
         ],
         "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "id": {
+            "type": "string"
           },
           "code": {
             "type": "string"
@@ -310,17 +273,17 @@
         "type": "object",
         "additionalProperties": false,
         "required": [
-          "id",
           "schema",
+          "id",
           "naam",
           "date modified"
         ],
         "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "id": {
+            "type": "integer"
           },
           "naam": {
             "type": "string"
@@ -336,6 +299,54 @@
       }
     },
     {
+      "id": "gemeente",
+      "type": "table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schema",
+          "id",
+          "code",
+          "date modified",
+          "naam"
+        ],
+        "properties": {
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "begin geldigheid": {
+            "type": "string",
+            "format": "date"
+          },
+          "einde geldigheid": {
+            "type": "string",
+            "format": "date"
+          },
+          "id": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "date modified": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "naam": {
+            "type": "string"
+          },
+          "verzorgingsgebied": {
+            "type": "integer"
+          },
+          "vervallen": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    {
       "id": "grootstedelijkgebied",
       "type": "table",
       "schema": {
@@ -343,17 +354,17 @@
         "type": "object",
         "additionalProperties": false,
         "required": [
-          "id",
           "schema",
+          "id",
           "naam",
           "date modified"
         ],
         "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "id": {
+            "type": "string"
           },
           "naam": {
             "type": "string"
@@ -372,25 +383,48 @@
       }
     },
     {
-      "id": "openbareruimte",
+      "id": "indicatieadresseerbaarobject",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
         "additionalProperties": false,
         "required": [
-          "id",
           "schema",
+          "landelijk id",
+          "indicatie geconstateerd",
+          "indicatie in onderzoek"
+        ],
+        "properties": {
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "landelijk id": {
+            "type": "string"
+          },
+          "indicatie geconstateerd": {
+            "type": "integer"
+          },
+          "indicatie in onderzoek": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    {
+      "id": "ligplaats",
+      "type": "table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schema",
+          "id",
           "date modified",
-          "naam",
-          "naam nen",
-          "woonplaats",
           "status"
         ],
         "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
           },
@@ -408,6 +442,171 @@
           "einde geldigheid": {
             "type": "string",
             "format": "date"
+          },
+          "id": {
+            "type": "string"
+          },
+          "date modified": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "landelijk id": {
+            "type": "string"
+          },
+          "vervallen": {
+            "type": "integer"
+          },
+          "indicatie geconstateerd": {
+            "type": "integer"
+          },
+          "indicatie in onderzoek": {
+            "type": "integer"
+          },
+          "geometrie": {
+            "$ref": "https://geojson.org/schema/Geometry.json"
+          },
+          "bron": {
+            "type": "string",
+            "relation": "bag:bron"
+          },
+          "buurt": {
+            "type": "string",
+            "relation": "bag:buurt"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "id": "nummeraanduiding",
+      "type": "table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schema",
+          "id",
+          "landelijk id",
+          "huisnummer",
+          "date modified",
+          "openbare ruimte"
+        ],
+        "properties": {
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "document mutatie": {
+            "type": "string",
+            "format": "date"
+          },
+          "document nummer": {
+            "type": "string"
+          },
+          "begin geldigheid": {
+            "type": "string",
+            "format": "date"
+          },
+          "einde geldigheid": {
+            "type": "string",
+            "format": "date"
+          },
+          "id": {
+            "type": "string"
+          },
+          "landelijk id": {
+            "type": "string"
+          },
+          "huisnummer": {
+            "type": "integer"
+          },
+          "huisletter": {
+            "type": "string"
+          },
+          "huisnummer toevoeging": {
+            "type": "string"
+          },
+          "postcode": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "vervallen": {
+            "type": "integer"
+          },
+          "date modified": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "bron": {
+            "type": "string",
+            "relation": "bag:bron"
+          },
+          "ligplaats": {
+            "type": "string",
+            "relation": "bag:ligplaats"
+          },
+          "openbare ruimte": {
+            "type": "string",
+            "relation": "bag:openbareruimte"
+          },
+          "standplaats": {
+            "type": "string",
+            "relation": "bag:standplaats"
+          },
+          "verblijfsobject": {
+            "type": "string",
+            "relation": "bag:verblijfsobject"
+          },
+          "type adres": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "id": "openbareruimte",
+      "type": "table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schema",
+          "id",
+          "date modified",
+          "naam",
+          "naam nen",
+          "woonplaats",
+          "status"
+        ],
+        "properties": {
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "document mutatie": {
+            "type": "string",
+            "format": "date"
+          },
+          "document nummer": {
+            "type": "string"
+          },
+          "begin geldigheid": {
+            "type": "string",
+            "format": "date"
+          },
+          "einde geldigheid": {
+            "type": "string",
+            "format": "date"
+          },
+          "id": {
+            "type": "string"
           },
           "landelijk id": {
             "type": "string"
@@ -449,22 +648,19 @@
       }
     },
     {
-      "id": "standplaats",
+      "id": "pand",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
         "additionalProperties": false,
         "required": [
-          "id",
           "schema",
-          "date modified",
-          "status"
+          "id",
+          "landelijk id",
+          "date modified"
         ],
         "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
           },
@@ -482,6 +678,152 @@
           "einde geldigheid": {
             "type": "string",
             "format": "date"
+          },
+          "id": {
+            "type": "string"
+          },
+          "landelijk id": {
+            "type": "string"
+          },
+          "bouwjaar": {
+            "type": "integer"
+          },
+          "laagste bouwlaag": {
+            "type": "integer"
+          },
+          "hoogste bouwlaag": {
+            "type": "integer"
+          },
+          "vervallen": {
+            "type": "integer"
+          },
+          "geometrie": {
+            "$ref": "https://geojson.org/schema/Geometry.json"
+          },
+          "date modified": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "pandnaam": {
+            "type": "string"
+          },
+          "bouwblok": {
+            "type": "string",
+            "relation": "bag:bouwblok"
+          },
+          "bouwlagen": {
+            "type": "integer"
+          },
+          "ligging": {
+            "type": "string"
+          },
+          "type woonobject": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "id": "stadsdeel",
+      "type": "table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schema",
+          "date modified",
+          "id",
+          "code",
+          "naam",
+          "gemeente"
+        ],
+        "properties": {
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "begin geldigheid": {
+            "type": "string",
+            "format": "date"
+          },
+          "einde geldigheid": {
+            "type": "string",
+            "format": "date"
+          },
+          "geometrie": {
+            "$ref": "https://geojson.org/schema/Geometry.json"
+          },
+          "date modified": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "id": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "naam": {
+            "type": "string"
+          },
+          "vervallen": {
+            "type": "integer"
+          },
+          "ingang cyclus": {
+            "type": "string",
+            "format": "date"
+          },
+          "brondocument naam": {
+            "type": "string"
+          },
+          "brondocument datum": {
+            "type": "string",
+            "format": "date"
+          },
+          "gemeente": {
+            "type": "string",
+            "relation": "bag:gemeente"
+          }
+        }
+      }
+    },
+    {
+      "id": "standplaats",
+      "type": "table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schema",
+          "id",
+          "date modified",
+          "status"
+        ],
+        "properties": {
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "document mutatie": {
+            "type": "string",
+            "format": "date"
+          },
+          "document nummer": {
+            "type": "string"
+          },
+          "begin geldigheid": {
+            "type": "string",
+            "format": "date"
+          },
+          "einde geldigheid": {
+            "type": "string",
+            "format": "date"
+          },
+          "id": {
+            "type": "string"
           },
           "landelijk id": {
             "type": "string"
@@ -517,6 +859,39 @@
       }
     },
     {
+      "id": "unesco",
+      "type": "table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schema",
+          "id",
+          "naam",
+          "date modified"
+        ],
+        "properties": {
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "id": {
+            "type": "string"
+          },
+          "naam": {
+            "type": "string"
+          },
+          "geometrie": {
+            "$ref": "https://geojson.org/schema/Geometry.json"
+          },
+          "date modified": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    {
       "id": "verblijfsobject",
       "type": "table",
       "schema": {
@@ -524,9 +899,9 @@
         "type": "object",
         "additionalProperties": false,
         "required": [
-          "id",
           "schema",
-          "landelijk",
+          "id",
+          "landelijk id",
           "vervallen",
           "date modified",
           "status",
@@ -534,9 +909,6 @@
           "toegang"
         ],
         "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
           },
@@ -554,6 +926,9 @@
           "einde geldigheid": {
             "type": "string",
             "format": "date"
+          },
+          "id": {
+            "type": "string"
           },
           "landelijk id": {
             "type": "string"
@@ -634,446 +1009,6 @@
       }
     },
     {
-      "id": "ligplaats",
-      "type": "table",
-      "schema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "id",
-          "schema",
-          "date modified",
-          "status"
-        ],
-        "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
-          "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
-          },
-          "document mutatie": {
-            "type": "string",
-            "format": "date"
-          },
-          "document nummer": {
-            "type": "string"
-          },
-          "begin geldigheid": {
-            "type": "string",
-            "format": "date"
-          },
-          "einde geldigheid": {
-            "type": "string",
-            "format": "date"
-          },
-          "date modified": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "landelijk id": {
-            "type": "string"
-          },
-          "vervallen": {
-            "type": "integer"
-          },
-          "indicatie geconstateerd": {
-            "type": "integer"
-          },
-          "indicatie in onderzoek": {
-            "type": "integer"
-          },
-          "geometrie": {
-            "$ref": "https://geojson.org/schema/Geometry.json"
-          },
-          "bron": {
-            "type": "string",
-            "relation": "bag:bron"
-          },
-          "buurt": {
-            "type": "string",
-            "relation": "bag:buurt"
-          },
-          "status": {
-            "type": "string"
-          }
-        }
-      }
-    },
-    {
-      "id": "stadsdeel",
-      "type": "table",
-      "schema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "id",
-          "schema",
-          "date modified",
-          "code",
-          "naam",
-          "gemeente"
-        ],
-        "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
-          "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
-          },
-          "begin geldigheid": {
-            "type": "string",
-            "format": "date"
-          },
-          "einde geldigheid": {
-            "type": "string",
-            "format": "date"
-          },
-          "geometrie": {
-            "$ref": "https://geojson.org/schema/Geometry.json"
-          },
-          "date modified": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "code": {
-            "type": "string"
-          },
-          "naam": {
-            "type": "string"
-          },
-          "vervallen": {
-            "type": "integer"
-          },
-          "ingang cyclus": {
-            "type": "string",
-            "format": "date"
-          },
-          "brondocument naam": {
-            "type": "string"
-          },
-          "brondocument datum": {
-            "type": "string",
-            "format": "date"
-          },
-          "gemeente": {
-            "type": "string",
-            "relation": "bag:gemeente"
-          }
-        }
-      }
-    },
-    {
-      "id": "woonplaats",
-      "type": "table",
-      "schema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "id",
-          "schema",
-          "date modified",
-          "landelijk",
-          "naam",
-          "gemeente"
-        ],
-        "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
-          "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
-          },
-          "document mutatie": {
-            "type": "string",
-            "format": "date"
-          },
-          "document nummer": {
-            "type": "string"
-          },
-          "begin geldigheid": {
-            "type": "string",
-            "format": "date"
-          },
-          "einde geldigheid": {
-            "type": "string",
-            "format": "date"
-          },
-          "date modified": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "landelijk id": {
-            "type": "string"
-          },
-          "naam": {
-            "type": "string"
-          },
-          "vervallen": {
-            "type": "integer"
-          },
-          "gemeente": {
-            "type": "string",
-            "relation": "bag:gemeente"
-          }
-        }
-      }
-    },
-    {
-      "id": "gemeente",
-      "type": "table",
-      "schema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "id",
-          "schema",
-          "code",
-          "date modified",
-          "naam"
-        ],
-        "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
-          "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
-          },
-          "begin geldigheid": {
-            "type": "string",
-            "format": "date"
-          },
-          "einde geldigheid": {
-            "type": "string",
-            "format": "date"
-          },
-          "code": {
-            "type": "string"
-          },
-          "date modified": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "naam": {
-            "type": "string"
-          },
-          "verzorgingsgebied": {
-            "type": "integer"
-          },
-          "vervallen": {
-            "type": "integer"
-          }
-        }
-      }
-    },
-    {
-      "id": "pand",
-      "type": "table",
-      "schema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "id",
-          "schema",
-          "landelijk",
-          "date modified"
-        ],
-        "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
-          "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
-          },
-          "document mutatie": {
-            "type": "string",
-            "format": "date"
-          },
-          "document nummer": {
-            "type": "string"
-          },
-          "begin geldigheid": {
-            "type": "string",
-            "format": "date"
-          },
-          "einde geldigheid": {
-            "type": "string",
-            "format": "date"
-          },
-          "landelijk id": {
-            "type": "string"
-          },
-          "bouwjaar": {
-            "type": "integer"
-          },
-          "laagste bouwlaag": {
-            "type": "integer"
-          },
-          "hoogste bouwlaag": {
-            "type": "integer"
-          },
-          "vervallen": {
-            "type": "integer"
-          },
-          "geometrie": {
-            "$ref": "https://geojson.org/schema/Geometry.json"
-          },
-          "date modified": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "pandnaam": {
-            "type": "string"
-          },
-          "bouwblok": {
-            "type": "string",
-            "relation": "bag:bouwblok"
-          },
-          "bouwlagen": {
-            "type": "integer"
-          },
-          "ligging": {
-            "type": "string"
-          },
-          "type woonobject": {
-            "type": "string"
-          },
-          "status": {
-            "type": "string"
-          }
-        }
-      }
-    },
-    {
-      "id": "nummeraanduiding",
-      "type": "table",
-      "schema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "id",
-          "schema",
-          "landelijk",
-          "huisnummer",
-          "date modified",
-          "openbare ruimte"
-        ],
-        "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
-          "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
-          },
-          "document mutatie": {
-            "type": "string",
-            "format": "date"
-          },
-          "document nummer": {
-            "type": "string"
-          },
-          "begin geldigheid": {
-            "type": "string",
-            "format": "date"
-          },
-          "einde geldigheid": {
-            "type": "string",
-            "format": "date"
-          },
-          "landelijk id": {
-            "type": "string"
-          },
-          "huisnummer": {
-            "type": "integer"
-          },
-          "huisletter": {
-            "type": "string"
-          },
-          "huisnummer toevoeging": {
-            "type": "string"
-          },
-          "postcode": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          },
-          "vervallen": {
-            "type": "integer"
-          },
-          "date modified": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "bron": {
-            "type": "string",
-            "relation": "bag:bron"
-          },
-          "ligplaats": {
-            "type": "string",
-            "relation": "bag:ligplaats"
-          },
-          "openbare ruimte": {
-            "type": "string",
-            "relation": "bag:openbareruimte"
-          },
-          "standplaats": {
-            "type": "string",
-            "relation": "bag:standplaats"
-          },
-          "verblijfsobject": {
-            "type": "string",
-            "relation": "bag:verblijfsobject"
-          },
-          "type adres": {
-            "type": "string"
-          },
-          "status": {
-            "type": "string"
-          }
-        }
-      }
-    },
-    {
-      "id": "unesco",
-      "type": "table",
-      "schema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "id",
-          "schema",
-          "naam",
-          "date modified"
-        ],
-        "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
-          "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
-          },
-          "naam": {
-            "type": "string"
-          },
-          "geometrie": {
-            "$ref": "https://geojson.org/schema/Geometry.json"
-          },
-          "date modified": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      }
-    },
-    {
       "id": "verblijfsobjectpandrelatie",
       "type": "table",
       "schema": {
@@ -1081,18 +1016,18 @@
         "type": "object",
         "additionalProperties": false,
         "required": [
-          "id",
           "schema",
+          "id",
           "date modified",
           "pand",
           "verblijfsobject"
         ],
         "properties": {
-          "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-          },
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "id": {
+            "type": "string"
           },
           "date modified": {
             "type": "string",
@@ -1105,6 +1040,63 @@
           "verblijfsobject": {
             "type": "string",
             "relation": "bag:verblijfsobject"
+          }
+        }
+      }
+    },
+    {
+      "id": "woonplaats",
+      "type": "table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schema",
+          "id",
+          "date modified",
+          "landelijk id",
+          "naam",
+          "gemeente"
+        ],
+        "properties": {
+          "schema": {
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+          },
+          "document mutatie": {
+            "type": "string",
+            "format": "date"
+          },
+          "document nummer": {
+            "type": "string"
+          },
+          "begin geldigheid": {
+            "type": "string",
+            "format": "date"
+          },
+          "einde geldigheid": {
+            "type": "string",
+            "format": "date"
+          },
+          "id": {
+            "type": "string"
+          },
+          "date modified": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "landelijk id": {
+            "type": "string"
+          },
+          "naam": {
+            "type": "string"
+          },
+          "vervallen": {
+            "type": "integer"
+          },
+          "gemeente": {
+            "type": "string",
+            "relation": "bag:gemeente"
           }
         }
       }
