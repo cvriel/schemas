@@ -1,7 +1,7 @@
 {
   "id": "bommen",
   "type": "dataset",
-  "title": "",
+  "title": "Bommen",
   "version": "0.0.1",
   "crs": "EPSG:28992",
   "tables": [
