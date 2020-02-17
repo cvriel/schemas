@@ -2,6 +2,7 @@
   "id": "bommen",
   "type": "dataset",
   "title": "Bommen",
+  "status": "beschikbaar",
   "version": "0.0.1",
   "crs": "EPSG:28992",
   "tables": [
@@ -12,41 +13,45 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "id",
-          "schema"
-        ],
+        "required": ["id", "schema"],
+        "display": "kenmerk",
         "properties": {
           "id": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/id",
             "description": "uniek"
           },
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "kenmerk": {
             "type": "string",
+            "title": "Kenmerk",
             "description": "Kenmerk"
           },
           "datum": {
             "type": "string",
+            "title": "Datum",
             "description": "Datum",
             "format": "date-time"
           },
           "bron": {
             "type": "string",
+            "title": "Bron",
             "description": "Bron"
           },
           "intekening": {
             "type": "string",
+            "title": "Intekening",
             "description": "Intekening"
           },
           "nauwkeurig": {
             "type": "string",
+            "title": "Nauwkeurig",
             "description": "Nauwkeurig"
           },
           "opmerkingen": {
             "type": "string",
+            "title": "Opmerkingen",
             "description": "Opmerkingen"
           },
           "geometry": {

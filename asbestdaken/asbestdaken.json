@@ -2,6 +2,7 @@
     "id": "asbestdaken",
     "type": "dataset",
     "title": "Asbestdaken",
+    "status": "beschikbaar",
     "version": "0.0.1",
     "crs": "EPSG:28992",
     "tables": [
@@ -13,6 +14,7 @@
                 "type": "object",
                 "additionalProperties": false,
                 "required": ["id", "schema"],
+                "display": "id",
                 "properties": {
                     "id": {
                         "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",
@@ -77,6 +79,7 @@
                 "type": "object",
                 "additionalProperties": false,
                 "required": ["id", "schema"],
+                "display": "id",
                 "properties": {
                     "id": {
                         "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",

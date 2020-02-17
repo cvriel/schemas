@@ -2,6 +2,7 @@
   "type": "dataset",
   "id": "bag",
   "title": "bag",
+  "status": "beschikbaar",
   "version": "0.0.1",
   "crs": "EPSG:28992",
   "tables": [
@@ -18,6 +19,7 @@
           "id",
           "code"
         ],
+        "display": "code",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -66,6 +68,7 @@
           "code",
           "date modified"
         ],
+        "display": "code",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -99,6 +102,7 @@
           "naam",
           "stadsdeel"
         ],
+        "display": "code",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -174,6 +178,7 @@
           "vollcode",
           "date modified"
         ],
+        "display": "code",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -238,6 +243,7 @@
           "date modified",
           "stadsdeel"
         ],
+        "display": "code",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -278,6 +284,7 @@
           "naam",
           "date modified"
         ],
+        "display": "naam",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -312,6 +319,7 @@
           "date modified",
           "naam"
         ],
+        "display": "naam",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -359,6 +367,7 @@
           "naam",
           "date modified"
         ],
+        "display": "naam",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -395,6 +404,7 @@
           "indicatie geconstateerd",
           "indicatie in onderzoek"
         ],
+        "display": "landelijk id",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -424,6 +434,7 @@
           "date modified",
           "status"
         ],
+        "display": "landelijk id",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -494,6 +505,7 @@
           "date modified",
           "openbare ruimte"
         ],
+        "display": "landelijk id",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -586,6 +598,7 @@
           "woonplaats",
           "status"
         ],
+        "display": "naam",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -660,6 +673,7 @@
           "landelijk id",
           "date modified"
         ],
+        "display": "landelijk id",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -741,6 +755,7 @@
           "naam",
           "gemeente"
         ],
+        "display": "code",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -803,6 +818,7 @@
           "date modified",
           "status"
         ],
+        "display": "landelijk id",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -871,6 +887,7 @@
           "naam",
           "date modified"
         ],
+        "display": "naam",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -1022,6 +1039,7 @@
           "pand",
           "verblijfsobject"
         ],
+        "display": "id",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -1059,6 +1077,7 @@
           "naam",
           "gemeente"
         ],
+        "display": "naam",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
