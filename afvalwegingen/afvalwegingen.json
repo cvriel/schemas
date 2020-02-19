@@ -30,7 +30,7 @@
                 "display": "id",
                 "properties": {
                     "id": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",
+                        "type": "integer",
                         "description": "Container-ID"
                     },
                     "schema": {
@@ -113,7 +113,7 @@
                 "display": "id",
                 "properties": {
                     "id": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
+                        "type": "string"
                     },
                     "schema": {
                         "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
@@ -169,7 +169,7 @@
                 "display": "id",
                 "properties": {
                     "id": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",
+                        "type": "string",
                         "description": "Weging-ID"
                     },
                     "schema": {
@@ -247,6 +247,12 @@
                 "required": ["id", "schema"],
                 "display": "naam",
                 "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "schema": {
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+                    },
                     "naam": {
                         "type": "string",
                         "description": "Naam"
@@ -260,12 +266,6 @@
                         "type": "string",
                         "description": "Gewicht",
                         "unit": "kg"
-                    },
-                    "id": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
-                    },
-                    "schema": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
                     }
                 }
             }
