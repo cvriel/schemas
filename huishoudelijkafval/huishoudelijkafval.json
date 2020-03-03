@@ -45,6 +45,7 @@
         "type": "object",
         "additionalProperties": false,
         "required": ["id", "schema"],
+        "display": "id",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
@@ -159,6 +160,7 @@
         "type": "object",
         "additionalProperties": false,
         "required": ["id", "schema"],
+        "display": "id",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
@@ -241,6 +243,7 @@
         "type": "object",
         "additionalProperties": false,
         "required": ["id", "schema"],
+        "display": "id",
         "properties": {
           "id": {
             "type": "string"
@@ -323,6 +326,7 @@
         "type": "object",
         "additionalProperties": false,
         "required": ["id", "schema"],
+        "display": "id",
         "properties": {
           "id": {
             "type": "string",
@@ -354,6 +358,7 @@
         "type": "object",
         "additionalProperties": false,
         "required": ["id", "schema"],
+        "display": "id",
         "properties": {
           "id": {
             "type": "string",
@@ -483,6 +488,7 @@
         "type": "object",
         "additionalProperties": false,
         "required": ["id", "schema"],
+        "display": "id",
         "properties": {
           "id": {
             "type": "integer"
