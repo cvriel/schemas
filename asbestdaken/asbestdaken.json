@@ -17,11 +17,11 @@
                 "display": "id",
                 "properties": {
                     "id": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/id",
                         "description": ""
                     },
                     "schema": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
                     },
                     "bouwjaar": {
                         "type": "number",
@@ -82,11 +82,11 @@
                 "display": "id",
                 "properties": {
                     "id": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/id",
                         "description": "Identificatie"
                     },
                     "schema": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
                     },
                     "perceelnummer": {
                         "type": "string",

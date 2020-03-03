@@ -38,11 +38,11 @@
                 "required": ["id", "schema"],
                 "properties": {
                     "id": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/id",
                         "description": "container_id"
                     },
                     "schema": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
                     },
                     "container id": {
                         "type": "string",
@@ -120,9 +120,9 @@
                         "uri": "https://bag.basisregistraties.overheid.nl/def/bag#identificatiecode",
                         "description": "Een identificatiecode van een verblijfsobject is een authentiek gegeven en een unieke aanduiding van het verblijfsobject."
                     },
-                    "gbd buurt identificatie": {
+                    "bag buurt identificatie": {
                         "type": "string",
-                        "relation": "gbd:buurt",
+                        "relation": "bag:buurt",
                         "uri": "https://www.amsterdam.nl/stelselpedia/gebieden-index/catalogus/buurt",
                         "description": "Unie­ke iden­ti­fi­ca­tie van het ob­ject"
                     },
@@ -146,11 +146,11 @@
                 "required": ["id", "schema"],
                 "properties": {
                     "id": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/id",
                         "description": "Container-ID"
                     },
                     "schema": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
                     },
                     "bk afv containerlocatie": {
                         "type": "string",
@@ -207,9 +207,9 @@
                         "uri": "https://bag.basisregistraties.overheid.nl/def/bag#identificatiecode",
                         "description": "Een identificatiecode van een verblijfsobject is een authentiek gegeven en een unieke aanduiding van het verblijfsobject."
                     },
-                    "gbd buurt identificatie": {
+                    "bag buurt identificatie": {
                         "type": "integer",
-                        "relation": "gbd:buurt",
+                        "relation": "bag:buurt",
                         "uri": "https://www.amsterdam.nl/stelselpedia/gebieden-index/catalogus/buurt",
                         "description": "Unie­ke iden­ti­fi­ca­tie van het ob­ject"
                     },
@@ -233,10 +233,10 @@
                 "required": ["id", "schema"],
                 "properties": {
                     "id": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/id"
                     },
                     "schema": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
                     },
                     "bk afv aanbiedlocatie cluster": {
                         "type": "integer",
@@ -291,9 +291,9 @@
                         "uri": "https://bag.basisregistraties.overheid.nl/def/bag#identificatiecode",
                         "description": "Een identificatiecode van een verblijfsobject is een authentiek gegeven en een unieke aanduiding van het verblijfsobject."
                     },
-                    "gbd buurt identificatie": {
+                    "bag buurt identificatie": {
                         "type": "integer",
-                        "relation": "gbd:buurt",
+                        "relation": "bag:buurt",
                         "uri": "https://www.amsterdam.nl/stelselpedia/gebieden-index/catalogus/buurt",
                         "description": "Unie­ke iden­ti­fi­ca­tie van het ob­ject"
                     },
@@ -316,10 +316,10 @@
                 "required": ["id", "schema"],
                 "properties": {
                     "id": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/id"
                     },
                     "schema": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
                     },
                     "bk afv container type": {
                         "type": "integer",
@@ -351,11 +351,11 @@
                 "required": ["id", "schema"],
                 "properties": {
                     "id": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id",
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/id",
                         "description": "Weging-ID"
                     },
                     "schema": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
                     },
                     "bk afv aanbiedlocatie cluster": {
                         "type": "string",
@@ -461,9 +461,9 @@
                         "uri": "https://bag.basisregistraties.overheid.nl/def/bag#identificatiecode",
                         "description": "Een identificatiecode van een verblijfsobject is een authentiek gegeven en een unieke aanduiding van het verblijfsobject."
                     },
-                    "gbd buurt identificatie": {
+                    "bag buurt identificatie": {
                         "type": "integer",
-                        "relation": "gbd:buurt",
+                        "relation": "bag:buurt",
                         "uri": "https://www.amsterdam.nl/stelselpedia/gebieden-index/catalogus/buurt",
                         "description": "Unie­ke iden­ti­fi­ca­tie van het ob­ject"
                     },
@@ -521,10 +521,10 @@
                         "description": "Einde van de periode waarop deze instantie van het object geldig is in de werkelijkheid. Wanneer deze waarde niet is ingevuld is de instantie nog geldig."
                     },
                     "id": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/id"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/id"
                     },
                     "schema": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
                     }
                 }
             }

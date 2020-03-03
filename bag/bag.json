@@ -22,7 +22,7 @@
         "display": "code",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "begin geldigheid": {
             "type": "string",
@@ -71,7 +71,7 @@
         "display": "code",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "code": {
             "type": "string"
@@ -105,7 +105,7 @@
         "display": "code",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "begin geldigheid": {
             "type": "string",
@@ -181,7 +181,7 @@
         "display": "code",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "begin geldigheid": {
             "type": "string",
@@ -246,7 +246,7 @@
         "display": "code",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "id": {
             "type": "string"
@@ -287,7 +287,7 @@
         "display": "naam",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "id": {
             "type": "integer"
@@ -322,7 +322,7 @@
         "display": "naam",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "begin geldigheid": {
             "type": "string",
@@ -370,7 +370,7 @@
         "display": "naam",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "id": {
             "type": "string"
@@ -407,7 +407,7 @@
         "display": "landelijk id",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "landelijk id": {
             "type": "string"
@@ -437,7 +437,7 @@
         "display": "landelijk id",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "document mutatie": {
             "type": "string",
@@ -508,7 +508,7 @@
         "display": "landelijk id",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "document mutatie": {
             "type": "string",
@@ -601,7 +601,7 @@
         "display": "naam",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "document mutatie": {
             "type": "string",
@@ -676,7 +676,7 @@
         "display": "landelijk id",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "document mutatie": {
             "type": "string",
@@ -758,7 +758,7 @@
         "display": "code",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "begin geldigheid": {
             "type": "string",
@@ -821,7 +821,7 @@
         "display": "landelijk id",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "document mutatie": {
             "type": "string",
@@ -890,7 +890,7 @@
         "display": "naam",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "id": {
             "type": "string"
@@ -927,7 +927,7 @@
         ],
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "document mutatie": {
             "type": "string",
@@ -1042,7 +1042,7 @@
         "display": "id",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "id": {
             "type": "string"
@@ -1080,7 +1080,7 @@
         "display": "naam",
         "properties": {
           "schema": {
-            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+            "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
           "document mutatie": {
             "type": "string",

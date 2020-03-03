@@ -34,7 +34,7 @@
                         "description": "Container-ID"
                     },
                     "schema": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
                     },
                     "cluster": {
                         "type": "string",
@@ -116,7 +116,7 @@
                         "type": "string"
                     },
                     "schema": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
                     },
                     "bag nummeraanduiding": {
                         "type": "string",
@@ -173,7 +173,7 @@
                         "description": "Weging-ID"
                     },
                     "schema": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
                     },
                     "cluster": {
                         "type": "string",
@@ -251,7 +251,7 @@
                         "type": "integer"
                     },
                     "schema": {
-                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.0#/definitions/schema"
+                        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
                     },
                     "naam": {
                         "type": "string",
