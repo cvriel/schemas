@@ -2,13 +2,42 @@
   "id": "bommen",
   "type": "dataset",
   "title": "Bommen",
+  "description": "Bommen",
+  "dateCreated": "2019-10-10",
+  "dateModified": "2019-10-12",
+  "license": "public",
   "status": "beschikbaar",
   "version": "0.0.1",
+  "homepage": "http://amsterdam.nl",
+  "language": "nl",
+  "accrualPeriodicity": "weekly",
+  "spatialDescription": "",
+  "spatialCoordinates": "",
+  "theme": ["Wonen", "duurzaamheid en milieu", "Ruimte en Topografie"],
+  "publisher": "OIS",
+  "owner": "Gemeente Amsterdam, Stadswerken",
+  "authorizationGrantor": "OIS",
+  "keywords": ["bommen", "explosies", "gevaar"],
+  "hasBeginning": "2019-08-12",
+  "hasEnd": "2025-01-01",
+  "objective": "Doelstelling",
+  "temporalUnit": "week",
+  "spatial": "week",
+  "legalBasis": "",
+  "contactPoint": {
+    "name": "Michiel Trimpe",
+    "email": "test@example.com"
+  },
   "crs": "EPSG:28992",
   "tables": [
     {
       "id": "bommen",
       "type": "table",
+      "title": "Bommen",
+      "description": "Bommen",
+      "dateCreated": "2019-10-10",
+      "dateModified": "2019-10-12",
+      "license": "public",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
@@ -26,7 +55,8 @@
           "kenmerk": {
             "type": "string",
             "title": "Kenmerk",
-            "description": "Kenmerk"
+            "description": "Kenmerk",
+            "uri": "http://indien-beschikbaar"
           },
           "datum": {
             "type": "string",
