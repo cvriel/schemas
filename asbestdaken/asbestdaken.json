@@ -2,7 +2,7 @@
     "id": "asbestdaken",
     "type": "dataset",
     "title": "Asbestdaken",
-    "status": "beschikbaar",
+    "status": "niet_beschikbaar",
     "version": "0.0.1",
     "crs": "EPSG:28992",
     "tables": [

@@ -17,7 +17,7 @@
   "accrualPeriodicity": "dagelijks",
   "publisher": "OIS",
   "description": "Alle locaties van de actieve onder- en bovengronds afvalcontainers en betonputten van de Gemeente Amsterdam. De locaties worden dagelijks bijgewerkt en bevatten de fracties Rest, Papier, Glas, Textiel en Plastic. Naast de objectinformatie zijn ook de weeggegevens beschikbaar.",
-  "status": "beschikbaar",
+  "status": "niet_beschikbaar",
   "keywords": [
     "Afval",
     "Afvalcontainers",
