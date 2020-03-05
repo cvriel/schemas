@@ -136,7 +136,7 @@
             "uri": "https://bag.basisregistraties.overheid.nl/def/bag#identificatiecode",
             "description": "Een identificatiecode van een verblijfsobject is een authentiek gegeven en een unieke aanduiding van het verblijfsobject."
           },
-          "bag buurt identificatie": {
+          "gbd buurt identificatie": {
             "type": "string",
             "relation": "bag:buurt",
             "uri": "https://www.amsterdam.nl/stelselpedia/gebieden-index/catalogus/buurt",
@@ -219,7 +219,7 @@
             "uri": "https://bag.basisregistraties.overheid.nl/def/bag#identificatiecode",
             "description": "Een identificatiecode van een verblijfsobject is een authentiek gegeven en een unieke aanduiding van het verblijfsobject."
           },
-          "bag buurt identificatie": {
+          "gbd buurt identificatie": {
             "type": "integer",
             "relation": "bag:buurt",
             "uri": "https://www.amsterdam.nl/stelselpedia/gebieden-index/catalogus/buurt",
@@ -303,7 +303,7 @@
             "uri": "https://bag.basisregistraties.overheid.nl/def/bag#identificatiecode",
             "description": "Een identificatiecode van een verblijfsobject is een authentiek gegeven en een unieke aanduiding van het verblijfsobject."
           },
-          "bag buurt identificatie": {
+          "gbd buurt identificatie": {
             "type": "integer",
             "relation": "bag:buurt",
             "uri": "https://www.amsterdam.nl/stelselpedia/gebieden-index/catalogus/buurt",
@@ -468,7 +468,7 @@
             "uri": "https://bag.basisregistraties.overheid.nl/def/bag#identificatiecode",
             "description": "Een identificatiecode van een verblijfsobject is een authentiek gegeven en een unieke aanduiding van het verblijfsobject."
           },
-          "bag buurt identificatie": {
+          "gbd buurt identificatie": {
             "type": "integer",
             "relation": "bag:buurt",
             "uri": "https://www.amsterdam.nl/stelselpedia/gebieden-index/catalogus/buurt",
