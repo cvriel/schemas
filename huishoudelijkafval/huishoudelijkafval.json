@@ -289,7 +289,8 @@
             "description": "status van het cluster (0 - inactief , 1 - actief)"
           },
           "volume m3": {
-            "type": "float",
+            "type": "number",
+            "unit": "m3",
             "description": "De som van het volume (m3) aan afval wat de containers per fractie kunnen bevatten"
           },
           "aantal containers": {
@@ -343,7 +344,8 @@
             "description": "Naam van het containertype"
           },
           "volume": {
-            "type": "float",
+            "type": "number",
+            "unit": "m3",
             "description": "Het volume (m3) aan afval wat de container kan bevatten"
           }
         }
@@ -380,7 +382,7 @@
             "description": "Lijst met voorkomende afvalfracties van het cluster"
           },
           "cluster volume m3": {
-            "type": "float",
+            "type": "number",
             "description": "De som van het volume (m3) aan afval wat de containers kunnen bevatten"
           },
           "bk afv weeggegevens": {
@@ -426,10 +428,12 @@
           },
           "eerste weging": {
             "type": "number",
+            "unit": "kg",
             "description": "Eerste weging container: gewicht vol in Kg"
           },
           "tweede weging": {
             "type": "number",
+            "unit": "kg",
             "description": "Tweede weging container: gewicht vol in Kg"
           },
           "netto gewicht": {
@@ -508,14 +512,14 @@
             "description": "Lijst met voorkomende afvalfracties van het cluster ??"
           },
           "volume": {
-            "type": "float",
-            "description": "De som van het volume (m3) aan afval wat de containers kunnen bevatten",
-            "unit": "m3"
+            "type": "number",
+            "unit": "m3",
+            "description": "De som van het volume (m3) aan afval wat de containers kunnen bevatten"
           },
           "gewicht": {
-            "type": "float",
-            "description": "Netto gewicht van het ingezamelde afval van de container in Kg",
-            "unit": "kg"
+            "type": "number",
+            "unit": "kg",
+            "description": "Netto gewicht van het ingezamelde afval van de container in Kg"
           },
           "aantal": {
             "type": "integer",
