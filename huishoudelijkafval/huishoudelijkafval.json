@@ -446,11 +446,11 @@
             "description": "Puntgeometrie in RD (epsg:28992) van de weging zoals door Welvaarts aangeleverd"
           },
           "longitude": {
-            "$ref": "https://geojson.org/schema/Point.json",
+            "type": "number",
             "description": "Puntgeometrie WGS84 (epsg:4326) )van de weging zoals door Welvaarts aangeleverd"
           },
           "latitude": {
-            "$ref": "https://geojson.org/schema/Point.json",
+            "type": "number",
             "description": "Puntgeometrie in WGS84 (epsg:4326) )van de weging zoals door Welvaarts aangeleverd"
           },
           "bediening code": {
