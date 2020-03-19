@@ -410,10 +410,6 @@
             "type": "string",
             "description": "weging cust id"
           },
-          "volgnummer ": {
-            "type": "integer",
-            "description": "Oplopende nummering wegingen per weegsysteem"
-          },
           "welvaartslocatienummer": {
             "type": "string",
             "description": "Locatienummer (cluster) zoals door Welvaarts is aangeleverd"
