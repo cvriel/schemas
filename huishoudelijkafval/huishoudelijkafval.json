@@ -52,7 +52,7 @@
             "type": "string",
             "description": "Uniek serienummer uitgegeven door de fabrikant"
           },
-          "cluster id": {
+          "cluster": {
             "type": "string",
             "relation": "afv api:cluster",
             "description": "Uniek identificerend kenmerk van cluster waaraan de container is gerelateerd"
@@ -105,7 +105,7 @@
             "format": "date-time",
             "description": "Datum waarop het object is geleverd"
           },
-          "containerlocatie id": {
+          "containerlocatie": {
             "type": "integer",
             "relation": "afv api:containerlocatie",
             "description": "Identificerend kenmerk van de put waarin de container is geplaatst"
@@ -122,7 +122,7 @@
             "type": "number",
             "description": "longitude (lengtegraad) in WGS84 (epsg:4326) ) van de containerlocatie"
           },
-          "containertype id": {
+          "containertype": {
             "type": "string",
             "relation": "afv api:container type",
             "description": "Identificerend kenmerk van het containertype"
@@ -228,7 +228,7 @@
             "relation": "afv api:container",
             "description": "Indicatie dat de containerlocatie een container bevat"
           },
-          "container id": {
+          "container": {
             "type": "string",
             "relation": "afv api:container",
             "description": "Unieke aanduiding objecttype"
