@@ -551,17 +551,17 @@
           },
           "cluster fractie datum opvoer": {
             "type": "string",
-            "format": "time-stamp",
+            "format": "date-time",
             "description": "De datum waarop de cluster in het systeem is opgevoerd."
           },
           "cluster fractie datum wijziging": {
             "type": "string",
-            "format": "time-stamp",
+            "format": "date-time",
             "description": "De datum waarop de cluster in het systeem is gewijzigd."
           },
           "cluster fractie datum einde": {
             "type": "string",
-            "format": "time-stamp",
+            "format": "date-time",
             "description": "De datum waarop de cluster in het systeem is eindigd."
           }
         }
