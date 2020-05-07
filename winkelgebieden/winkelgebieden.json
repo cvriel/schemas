@@ -13,16 +13,16 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
         "additionalProperties": false,
-        "required": ["schema", "ogc fid"],
+        "required": ["schema", "ogcfid"],
         "display": "id",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
-          "ogc fid": {
+          "ogcfid": {
             "type": "string"
           },
-          "wkb geometry": {
+          "wkbgeometry": {
             "$ref": "https://geojson.org/schema/Geometry.json"
           },
           "gebcode": {
@@ -49,7 +49,7 @@
          "categorie": {
             "type": "string"
           },
-          "categorie naam": {
+          "categorienaam": {
             "type": "string"
           }         
         }
