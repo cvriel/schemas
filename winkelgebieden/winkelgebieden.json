@@ -1,63 +1,113 @@
 {
   "type": "dataset",
-  "id": "winkgeb",
-  "title": "winkgeb",
+  "id": "fietspaaltjes",
+  "title": "fietspaaltjes",
   "status": "beschikbaar",
-  "description": "winkelgebieden",
   "version": "0.0.1",
   "crs": "EPSG:28992",
   "tables": [
     {
-      "id": "geb",
+      "id": "fietspaaltjes",
       "type": "table",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
         "additionalProperties": false,
-        "required": ["schema","ogc_fid"],
+        "required": ["schema", "id"],
         "display": "id",
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
           },
-          "ogc_fid": {
-            "type": "integer"
+          "id": {
+            "type": "string"
           },
-          "wkb geometry": {
+          "geometry": {
             "$ref": "https://geojson.org/schema/Geometry.json"
           },
-          "gebcode": {
+          "street": {
             "type": "string"
           },
-          "gebnaam": {
+          "at": {
             "type": "string"
           },
-          "code": {
+          "area": {
             "type": "string"
           },
-          "oppha": {
-            "type": "number"
-          },
-          "codewg": {
+          "score 2013": {
             "type": "string"
           },
-          "concgebied": {
+          "score current": {
             "type": "string"
           },
-          "concnaam": {
-            "type": "string"
+          "count": {
+            "type": "integer"
           },
-          "bc2015": {
-            "type": "string"
+          "paaltjes weg": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
-          "geb22": {
-            "type": "string"
+          "soort paaltje": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
-          "categorie": {
-            "type": "string"
+          "uiterlijk": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
-          "categorie naam": {
-            "type": "string"
+          "type": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "ruimte": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "markering": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "beschadigingen": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "veiligheid": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "zicht in donker": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "soort weg": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "noodzaak": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }
