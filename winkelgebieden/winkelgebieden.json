@@ -22,7 +22,7 @@
           "id": {
             "type": "string"
           },
-          "wkbgeometry": {
+          "wkb geometry": {
             "$ref": "https://geojson.org/schema/Geometry.json"
           },
           "gebcode": {
