@@ -3,7 +3,7 @@
   "id": "winkgeb",
   "title": "winkgeb",
   "status": "beschikbaar",
-  "description": 'Winkelgebieden',
+  "description": "Winkelgebieden",
   "version": "0.0.1",
   "crs": "EPSG:28992",
   "tables": [
