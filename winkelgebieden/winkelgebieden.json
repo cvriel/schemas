@@ -30,7 +30,8 @@
             "type": "string"
           },
           "gebnaam": {
-            "type": "string"
+            "type": "string",
+            "prov": "gebiedsnaam"
           },
           "code": {
             "type": "string"
