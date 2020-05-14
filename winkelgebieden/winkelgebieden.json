@@ -12,6 +12,7 @@
     {
       "id": "winkelgebieden",
       "type": "table",
+      "provenance": "file /path/to/source/file.shp",
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
