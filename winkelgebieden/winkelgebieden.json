@@ -7,11 +7,12 @@
   "version": "0.0.1",
   "crs": "EPSG:28992",
   "language": "NL",
-  "provenance": "database postgres",
+  "provenance": "file shape",
   "tables": [
     {
       "id": "winkelgebieden",
       "type": "table",
+      "provenance":"/winkelgebieden/acceptence/winkelgebieden.shp"
       "schema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
