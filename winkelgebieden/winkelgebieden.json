@@ -7,7 +7,7 @@
   "version": "0.0.1",
   "crs": "EPSG:28992",
   "language": "NL",
-  "provenance": "db postgres"
+  "provenance": "db postgres",
   "tables": [
     {
       "id": "winkelgebieden",
