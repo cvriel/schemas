@@ -34,8 +34,7 @@
             "provenance": "gebcode"
           },
           "gebnaam": {
-            "type": "string",
-            "prov": "gebiedsnaam"
+            "type": "string"           
           },
           "code": {
             "type": "string"
