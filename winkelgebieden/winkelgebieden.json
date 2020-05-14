@@ -29,8 +29,9 @@
           "wkb geometry": {
             "$ref": "https://geojson.org/schema/Geometry.json"
           },
-          "gebcode": {
-            "type": "string"
+          "gebiedscode": {
+            "type": "string",
+            "provenance": "gebcode"
           },
           "gebnaam": {
             "type": "string",
