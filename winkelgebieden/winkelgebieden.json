@@ -26,16 +26,17 @@
           "id": {
             "type": "integer"
           },
-          "wkb geometry": {
+          "geometry": {
             "$ref": "https://geojson.org/schema/Geometry.json",
-            "provenance": "geometrie"
+            "provenance": "wkb geometry"
           },
           "gebiedscode": {
             "type": "string",
             "provenance": "gebcode"
           },
-          "gebnaam": {
-            "type": "string"           
+          "gebiedsnaam": {
+            "type": "string",
+            "provenance": "gebnaam"
           },
           "code": {
             "type": "string"
