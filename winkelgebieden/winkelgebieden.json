@@ -27,7 +27,8 @@
             "type": "integer"
           },
           "wkb geometry": {
-            "$ref": "https://geojson.org/schema/Geometry.json"
+            "$ref": "https://geojson.org/schema/Geometry.json",
+            "provenance": "geometrie"
           },
           "gebiedscode": {
             "type": "string",
